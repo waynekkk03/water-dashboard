@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Water Quality Monitor Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .chart-container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Water Quality Monitor Dashboard</h1>
+
+    <div class="chart-container">
+        <h2>Field 1</h2>
+        <iframe src="https://thingspeak.com/channels/3158271/charts/1?api_key=2UAS47R0CQ21EHCU&dynamic=true"></iframe>
+    </div>
+
+    <div class="chart-container">
+        <h2>Field 2</h2>
+        <iframe src="https://thingspeak.com/channels/3158271/charts/2?api_key=2UAS47R0CQ21EHCU&dynamic=true"></iframe>
+    </div>
+
+    <div class="chart-container">
+        <h2>Field 3</h2>
+        <iframe src="https://thingspeak.com/channels/3158271/charts/3?api_key=2UAS47R0CQ21EHCU&dynamic=true"></iframe>
+    </div>
+
+    <div class="chart-container">
+        <h2>Field 4</h2>
+        <iframe src="https://thingspeak.com/channels/3158271/charts/4?api_key=2UAS47R0CQ21EHCU&dynamic=true"></iframe>
+    </div>
+
+</body>
+</html>
