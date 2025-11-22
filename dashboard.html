@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Water Quality Monitor Dashboard</title>
+    <title>ECO Voya Data Centre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         :root {
@@ -119,11 +119,6 @@
             font-weight: 600;
         }
 
-        .chart-meta {
-            font-size: 11px;
-            color: var(--text-sub);
-        }
-
         iframe {
             width: 100%;
             height: 320px;
@@ -159,13 +154,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="page">
         <header class="header">
-            <h1 class="title">Water Quality Monitor Dashboard</h1>
-            <p class="subtitle">
-                Real-time visualisation of your ThingSpeak channel data (TDS, Turbidity, etc.).
-            </p>
+            <h1 class="title">ECO Voya Data Centre</h1>
+            <p class="subtitle">Real-time visualisation of water quality data.</p>
         </header>
 
         <main class="content">
@@ -176,44 +170,36 @@
                 </div>
 
                 <div class="grid">
+                    <!-- Field 1 -->
                     <article class="chart-card">
                         <div class="chart-title-row">
                             <div class="chart-name">Field 1</div>
-                            <div class="chart-meta">TDS / Conductivity</div>
                         </div>
-                        <iframe
-                            src="https://thingspeak.com/channels/3158271/charts/1?api_key=2UAS47R0CQ21EHCU&dynamic=true"
-                        ></iframe>
+                        <iframe src="https://thingspeak.com/channels/3158271/charts/1?api_key=2UAS47R0CQ21EHCU&dynamic=true&title=TDS&yaxis="></iframe>
                     </article>
 
+                    <!-- Field 2 -->
                     <article class="chart-card">
                         <div class="chart-title-row">
                             <div class="chart-name">Field 2</div>
-                            <div class="chart-meta">Turbidity</div>
                         </div>
-                        <iframe
-                            src="https://thingspeak.com/channels/3158271/charts/2?api_key=2UAS47R0CQ21EHCU&dynamic=true"
-                        ></iframe>
+                        <iframe src="https://thingspeak.com/channels/3158271/charts/2?api_key=2UAS47R0CQ21EHCU&dynamic=true&title=Turbidity&yaxis="></iframe>
                     </article>
 
+                    <!-- Field 3 (Temperature) -->
                     <article class="chart-card">
                         <div class="chart-title-row">
                             <div class="chart-name">Field 3</div>
-                            <div class="chart-meta">Sensor 3</div>
                         </div>
-                        <iframe
-                            src="https://thingspeak.com/channels/3158271/charts/3?api_key=2UAS47R0CQ21EHCU&dynamic=true"
-                        ></iframe>
+                        <iframe src="https://thingspeak.com/channels/3158271/charts/3?api_key=2UAS47R0CQ21EHCU&dynamic=true&title=Temperature&yaxis="></iframe>
                     </article>
 
+                    <!-- Field 4 (Eco Score) -->
                     <article class="chart-card">
                         <div class="chart-title-row">
                             <div class="chart-name">Field 4</div>
-                            <div class="chart-meta">Sensor 4</div>
                         </div>
-                        <iframe
-                            src="https://thingspeak.com/channels/3158271/charts/4?api_key=2UAS47R0CQ21EHCU&dynamic=true"
-                        ></iframe>
+                        <iframe src="https://thingspeak.com/channels/3158271/charts/4?api_key=2UAS47R0CQ21EHCU&dynamic=true&title=Eco%20Score&yaxis="></iframe>
                     </article>
                 </div>
             </section>
